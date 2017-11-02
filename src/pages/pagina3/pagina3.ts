@@ -12,10 +12,10 @@ export class Pagina3Page {
 
     constructor(private navParams: NavParams,
         private navCtrl: NavController) {
-        console.log(navParams);
+        console.log(this.navParams);
 
-        if (navParams.get('mutante')) {
-            this.mutante = navParams.get('mutante');
+        if (this.navParams.get('mutante')) {
+            this.mutante = this.navParams.get('mutante');
         }
     }
 

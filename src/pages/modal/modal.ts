@@ -12,8 +12,8 @@ export class ModalPage {
 
   constructor(private navParams: NavParams,
     private viewCtrl: ViewController) {
-    this.nombre = navParams.get('nombre');
-    this.edad = navParams.get('edad');
+    this.nombre = this.navParams.get('nombre');
+    this.edad = this.navParams.get('edad');
 
     console.log(this.nombre, this.edad);
 
